@@ -1,0 +1,102 @@
+{
+  "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "project": {
+    "name": "ngx-admin-demo"
+  },
+  "apps": [
+    {
+      "root": "src",
+      "outDir": "dist",
+      "assets": [
+        "assets",
+        "favicon.ico",
+        "favicon.png",
+        {
+          "glob": "**/*",
+          "input": "../node_modules/leaflet/dist/images",
+          "output": "./assets/img/markers"
+        }
+      ],
+      "index": "index.html",
+      "main": "main.ts",
+      "polyfills": "polyfills.ts",
+      "test": "test.ts",
+      "tsconfig": "tsconfig.app.json",
+      "testTsconfig": "tsconfig.spec.json",
+      "styles": [
+        "./assets/vendor/bootstrap/css/bootstrap.min.css",
+        "./assets/vendor/font-awesome/css/fontawesome-all.min.css",
+        "./assets/vendor/animate/animate.min.css",
+        "./assets/vendor/simple-line-icons/css/simple-line-icons.min.css",
+        "./assets/vendor/owl.carousel/assets/owl.carousel.min.css",
+        "./assets/vendor/owl.carousel/assets/owl.theme.default.min.css",
+        "./assets/vendor/magnific-popup/magnific-popup.min.css",
+        "./assets/css/theme.css",
+        "./assets/css/theme-elements.css",
+        "./assets/css/theme-blog.css",
+        "./assets/css/theme-shop.css",
+        "./assets/vendor/rs-plugin/css/settings.css",
+        "./assets/vendor/rs-plugin/css/layers.css",
+        "./assets/vendor/rs-plugin/css/navigation.css",
+        "./assets/css/demos/demo-education.css",
+        "./assets/css/custom.css",
+        "./assets/css/skins/skin-education.css"
+      ],
+      "scripts": [
+        "./assets/vendor/modernizr/modernizr.min.js",    
+        "./assets/vendor/jquery/jquery.min.js",
+        "./assets/vendor/jquery.appear/jquery.appear.min.js",
+        "./assets/vendor/jquery.easing/jquery.easing.min.js",
+        "./assets/vendor/jquery-cookie/jquery-cookie.min.js",
+        "./assets/vendor/popper/umd/popper.min.js",
+        "./assets/vendor/bootstrap/js/bootstrap.min.js",
+        "./assets/vendor/common/common.min.js",
+        "./assets/vendor/jquery.validation/jquery.validation.min.js",
+        "./assets/vendor/jquery.easy-pie-chart/jquery.easy-pie-chart.min.js",
+        "./assets/vendor/jquery.gmap/jquery.gmap.min.js",
+        "./assets/vendor/jquery.lazyload/jquery.lazyload.min.js",
+        "./assets/vendor/isotope/jquery.isotope.min.js",
+        "./assets/vendor/owl.carousel/owl.carousel.min.js",
+        "./assets/vendor/magnific-popup/jquery.magnific-popup.min.js",
+        "./assets/vendor/vide/vide.min.js",
+        "./assets/vendor/jquery.countdown/jquery.countdown.min.js",
+        "./assets/js/theme.js",
+        "./assets/vendor/rs-plugin/js/jquery.themepunch.tools.min.js",
+        "./assets/vendor/rs-plugin/js/jquery.themepunch.revolution.min.js",
+        "./assets/js/demos/demo-education.js",
+        "./assets/js/custom.js",
+        "./assets/js/theme.init.js" 
+      ],
+      "environmentSource": "environments/environment.ts",
+      "environments": {
+        "dev": "environments/environment.ts",
+        "prod": "environments/environment.prod.ts"
+      }
+    }
+  ],
+  "e2e": {
+    "protractor": {
+      "config": "./protractor.conf.js"
+    }
+  },
+  "lint": [
+    {
+      "project": "src/tsconfig.app.json"
+    },
+    {
+      "project": "src/tsconfig.spec.json"
+    },
+    {
+      "project": "e2e/tsconfig.e2e.json"
+    }
+  ],
+  "test": {
+    "karma": {
+      "config": "./karma.conf.js"
+    }
+  },
+  "defaults": {
+    "styleExt": "css",
+    "component": {}
+  }
+}
